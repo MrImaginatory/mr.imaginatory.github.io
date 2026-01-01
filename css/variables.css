@@ -1,0 +1,50 @@
+/* 
+  Design Tokens 
+  Typography: Instrument Sans (Headings), Geist (Body/UI)
+  Palette: Stripe-inspired (Light/Dark)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  /* Colors - Light Mode (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f9fc;
+  --text-primary: #1a1f36;
+  --text-secondary: #4f566b;
+  --accent: #635bff;
+  --accent-hover: #473dff;
+  --border: #e0e0e0;
+  
+  /* Functional Colors */
+  --success: #008000;
+  --error: #d92d20;
+
+  /* Typography */
+  --font-heading: 'Instrument Sans', sans-serif;
+  --font-body: 'Geist', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;  /* 4px */
+  --space-s: 0.5rem;    /* 8px */
+  --space-m: 1rem;      /* 16px */
+  --space-l: 1.5rem;    /* 24px */
+  --space-xl: 2rem;     /* 32px */
+  --space-xxl: 4rem;    /* 64px */
+
+  /* Layout */
+  --max-width: 1200px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+  --bg-primary: #121212;
+  --bg-secondary: #1a1f36;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent: #00d4ff;
+  --accent-hover: #33daff;
+  --border: #333333;
+}
